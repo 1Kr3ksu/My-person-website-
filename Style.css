@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+section {
+    background-color: lightskyblue;
+    color: #333;
+    border: 1px solid #bdc3c7;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+}
+
+li::before {
+    content: '\2022';
+    color: dodgerblue;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+}
